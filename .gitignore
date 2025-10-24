@@ -1,0 +1,131 @@
+# ============================
+# 🧠 Python & Environment
+# ============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+*.dll
+
+# Virtual environments
+venv/
+.env/
+.env.bak/
+.venv/
+env/
+ENV/
+env.bak/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+*.ipynb_save
+*.ipynb.tmp
+
+# ============================
+# 🧰 IDE & OS Files
+# ============================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ============================
+# ⚙️ Logs & Cache
+# ============================
+*.log
+logs/
+*.bak
+*.tmp
+*.old
+*.sqlite3
+*.db
+.cache/
+__pypackages__/
+
+# ============================
+# 📦 Build / Distribution
+# ============================
+build/
+dist/
+*.egg-info/
+*.spec
+*.manifest
+*.coverage
+coverage.xml
+htmlcov/
+*.pkl
+
+# ============================
+# 🧾 Data & Model Files
+# ============================
+*.csv
+*.xlsx
+*.json
+*.h5
+*.joblib
+*.sav
+*.npy
+*.npz
+
+# You can whitelist your main dataset if needed:
+!water_potability.csv
+
+# ============================
+# 🧩 Project Specific
+# ============================
+ml_models/*.pkl
+ml_models/__pycache__/
+*.png
+model_results.csv
+
+# MongoDB dump backups
+dump/
+*.bson
+
+# ============================
+# 🧱 Node/React (if ever added)
+# ============================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ============================
+# 🧪 Streamlit cache
+# ============================
+.streamlit/
+.streamlit/secrets.toml
+.streamlit/config.toml
+
+# ============================
+# 🔑 Credentials & Secrets
+# ============================
+*.key
+*.pem
+*.crt
+*.creds
+secrets.json
+config.json
+credentials.json
+api_keys.txt
+
+# Example MongoDB connection strings (to be replaced in env)
+*.env.local
+*.env.prod
+*.env.dev
+
+# ============================
+# 🧮 Temporary Outputs
+# ============================
+*.svg
+*.pdf
+*.pptx
+*.docx
+*.zip
+*.tar.gz
