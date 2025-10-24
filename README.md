@@ -1,14 +1,12 @@
-Here’s a clean, professional **`README.md`** for your **Smart Borewell Water Quality Monitoring System** — it explains setup, architecture, usage, and visual output clearly for presentations or GitHub 👇
 
----
 
-```markdown
-# 💧 Smart Borewell Water Quality Monitoring System
 
-### 🌍 Real-time IoT + Machine Learning + Streamlit Dashboard
+#  Smart Borewell Water Quality Monitoring System
 
-This project simulates a **Smart Borewell Monitoring System** that collects **water quality data** from IoT sensors, predicts **potability (safe or unsafe)** using ML models, and visualizes live readings via a **Streamlit dashboard**.  
-It uses **FastAPI** as the backend, **MongoDB Atlas** as the database, and **Random Forest/XGBoost** for predictive analytics.
+### Real-time IoT + Machine Learning + Streamlit Dashboard
+
+* This project simulates a **Smart Borewell Monitoring System** that collects **water quality data** from IoT sensors, predicts **potability (safe or unsafe)** using ML models, and visualizes live readings via a **Streamlit dashboard**.  
+* It uses **FastAPI** as the backend, **MongoDB Atlas** as the database, and **Random Forest/XGBoost** for predictive analytics.
 
 ---
 
@@ -16,13 +14,14 @@ It uses **FastAPI** as the backend, **MongoDB Atlas** as the database, and **Ran
 
 ```
 
-IoT Sensors → FastAPI Backend → ML Model (RF/XGBoost)
-↓                          ↑
-Simulated Data (Python)        |
-↓                          |
-MongoDB Atlas ←-------------------
-↓
+IoT Sensors → FastAPI Backend → ML Model (Random Forest / XGBoost)
+       ↓                            ↑
+Simulated Data (Python)             |
+       ↓                            |
+   MongoDB Atlas  ←------------------
+       ↓
 Streamlit Dashboard (Visualization)
+
 
 ```
 
@@ -85,7 +84,7 @@ smart_borewell_monitor/
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/smart-borewell-monitor.git
+git clone https://github.com/magnabenita/smart-borewell-monitor.git
 cd smart-borewell-monitor
 ````
 
@@ -95,25 +94,6 @@ cd smart-borewell-monitor
 
 ```bash
 pip install -r requirements.txt
-```
-
-> Example `requirements.txt` (create one if missing):
-
-```
-fastapi
-uvicorn
-pymongo
-joblib
-pandas
-numpy
-scikit-learn
-xgboost
-imbalanced-learn
-matplotlib
-plotly
-streamlit
-streamlit-autorefresh
-requests
 ```
 
 ---
@@ -161,9 +141,9 @@ This script continuously sends **region-wise water quality readings** to the bac
 Example output:
 
 ```
-🌍 Starting *realistic* IoT data simulator...
-📡 [Chennai] Sent: {'ph': 7.1, 'Hardness': 180, ...}
-🧠 Response: {"status": "Data stored successfully", "prediction": 1}
+ Starting *realistic* IoT data simulator...
+ [Chennai] Sent: {'ph': 7.1, 'Hardness': 180, ...}
+ Response: {"status": "Data stored successfully", "prediction": 1}
 ```
 
 ---
@@ -176,7 +156,7 @@ streamlit run app.py
 ```
 
 ✅ Dashboard URL:
-👉 `http://localhost:8501`
+ `http://localhost:8501`
 
 Features:
 
@@ -211,11 +191,13 @@ It produces:
 
 | Model         | Accuracy | Precision | Recall | F1-Score |
 | ------------- | -------- | --------- | ------ | -------- |
-| Random Forest | 0.83     | 0.79      | 0.85   | 0.82     |
-| XGBoost       | 0.85     | 0.82      | 0.87   | 0.84     |
+| Random Forest | 0.93     | 0.91      | 0.90   | 0.90     |
+| XGBoost       | 0.91     | 0.90      | 0.88   | 0.89     |
 
 **Feature Importance Chart:**
-![Feature Importance](feature_importance_rf.png)
+
+<img width="500" height="300" alt="image" src="https://github.com/user-attachments/assets/28ae4efd-ce4a-4ac2-85ee-597f4df9e807" />
+
 
 ---
 
@@ -270,8 +252,8 @@ Response:
 ## 👨‍💻 Contributors
 
 **Magna Benita P** – Lead Developer
-💬 M.Tech (Integrated) – VIT
-📫 Contact: [your email or LinkedIn]
+M.Tech (Integrated) – VIT
+Contact: magnabenita123@gmail.com
 
 ---
 
@@ -283,9 +265,6 @@ This project is licensed under the MIT License — free to use and modify with a
 
 **💧 Smart Borewell — Safer Water, Smarter Future.**
 
-```
 
----
 
-Would you like me to also generate the **`requirements.txt`** file automatically from your code imports (ready to drop into your repo)?
-```
+
